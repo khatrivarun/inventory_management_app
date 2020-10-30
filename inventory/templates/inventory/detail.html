@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="title">
+        <h2 class="title">{{ object.name }}</h2>
+    </div>
+
+    <div class="title">
+        <h2 class="title-inline">Description: </h2>
+        <span>{{ object.description }}</span>
+    </div>
+
+    <div class="title">
+        <h2 class="title-inline">Quantity: </h2>
+        <span>{{ object.quantity }}</span>
+    </div>
+
+    <div class="title">
+        <h2 class="title-inline">Added: </h2>
+        <span>{{ object.added }}</span>
+    </div>
+
+    <div class="title">
+        <h2 class="title-inline">Updated: </h2>
+        <span>{{ object.updated }}</span>
+    </div>
+
+    <div class="title">
+        <button class="pure-button pure-button-primary">
+            <a href="/inventory/delete/{{ object.slug }}" class="no-link-button">
+                Delete
+            </a>
+        </button>
+        <button class="pure-button pure-button-primary">
+            <a href="/inventory/update/{{ object.slug }}" class="no-link-button">
+                Update
+            </a>
+        </button>
+        <button class="pure-button pure-button-primary">
+            <a href="/inventory/all/" class="no-link-button">
+                Show All
+            </a>
+        </button>
+    </div>
+
+{% endblock %}

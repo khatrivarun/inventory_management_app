@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventory Management Tool</title>
+    <style>
+        * {
+            font-family: 'Baloo Da 2', cursive;
+            padding: 0;
+            margin: 0;
+        }
+
+        .title {
+            padding: 1rem;
+        }
+
+        .title-inline {
+            padding: 1rem;
+            display: inline-block;
+        }
+
+        .item {
+            padding: 1rem
+        }
+
+        .no-link {
+            text-decoration: none;
+            text-decoration-style: unset;
+            color: black;
+            font-size: 24px;
+        }
+
+        .no-link-github {
+            text-decoration: none;
+            text-decoration-style: unset;
+            color: black;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .no-link-github:hover {
+            text-decoration: underline;
+            color: black;
+            font-size: 24px;
+        }
+
+        .no-link-button {
+            text-decoration: none;
+            text-decoration-style: unset;
+            color: white;
+            font-size: 24px;
+        }
+
+        .no-link-title {
+            text-decoration: none;
+            text-decoration-style: unset;
+            color: black;
+            cursor: pointer;
+        }
+
+        .item-name {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="pure-u-1">
+    <h1 class="title">
+        <a href="/" class="no-link-title">
+            Inventory Management
+        </a>
+    </h1>
+    <hr/>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="title">
+        <h1 class="item-name">Hello Everyone!</h1>
+        <div class="item-name">
+            This is an example Django Site built by
+            <a href="https://github.com/khatrivarun/" target="_blank" class="no-link-github">me</a>
+            where I just wanted to teach myself Django by means of a project and hence it is here!
+        </div>
+
+        <div class="item-name">
+            It is not the best project ever and it is not going to win any awards for anything
+            but it is a simple inventory management tool which can track what all items you
+            have!
+        </div>
+
+        <div class="item-name">
+            Project Code is hosted on GitHub on
+            <a href="https://github.com/khatrivarun/" target="_blank" class="no-link-github">this link.</a>
+            It is built on Django and templates using Jinja2 and styling by Pure.css
+        </div>
+    </div>
+
+    <div class="pure-g">
+
+        <div class="item">
+            <button class="pure-button pure-button-primary">
+                <a href="/user/login" class="no-link-button">
+                    Login Here
+                </a>
+            </button>
+        </div>
+
+        <div class="item">
+            <button class="pure-button pure-button-primary">
+                <a href="/user/register/" class="no-link-button">
+                    Register Here
+                </a>
+            </button>
+        </div>
+
+    </div>
+
+{% endblock %}

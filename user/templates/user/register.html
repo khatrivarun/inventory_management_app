@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="pure-g">
+        <div class="pure-u-1">
+
+            <div class="title">
+                <h2 class="title">Register New User.</h2>
+            </div>
+
+            <form action="." class="pure-form pure-form-aligned" method="post">
+                {% csrf_token %}
+                <fieldset>
+                    {% for field in form %}
+                        <div class="pure-control-group">
+                            {{ field.label_tag }}
+                            {{ field }}
+                            {% for error in field.errors %}
+                                <div class="pure-form-message-inline">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+
+                    <div class="pure-controls">
+                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="item">
+                <button class="pure-button pure-button-primary">
+                    <a href="/user/login/" class="no-link-button">
+                        Login
+                    </a>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

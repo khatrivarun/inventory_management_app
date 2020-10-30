@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="title">
+        <h2 class="title-inline">Are You Sure You Want To Delete: </h2>
+        <span class="item-name">{{ object.name }} ?</span>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="title">
+            <button class="pure-button pure-button-primary">
+                Yes, Delete
+            </button>
+        </div>
+    </form>
+
+{% endblock %}
